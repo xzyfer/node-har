@@ -1,0 +1,27 @@
+{
+  "name": "node-har",
+  "version": "0.0.0",
+  "description": "Simple utility for handling and manipulating HAR files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xzyfer/node-har.git"
+  },
+  "author": "xzyfer",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "9cfa0eab62d3cac8c70e01317c8659af494eed03",
+  "dependencies": {
+    "lodash": "~2.2.0",
+    "optimist": "~0.6.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-release": "~0.6.0",
+    "grunt-contrib-jshint": "~0.6.4",
+    "matchdep": "~0.1.2"
+  }
+}

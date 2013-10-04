@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var pkg = require('../package.json')
+  , har = require('..')
+  , fs = require('fs')
+  , file = ''
+  , argv = require('optimist')
+        .usage('Parse har file')
+        .alias('f', 'file')
+        .describe('f', 'Load a file')
+        .argv
+;
+
+/**
+ * Execute har
+ */
+
+if(argv.file) {
+    fs.createReadStream(argv.file)
+        .on('data', function(buf) {
+            file += buf.toString()
+        })
+        .on('end', function() {
+            console.log(har(file).data());
+        });
+} else {
+    console.log(har(argv._[0]).data());
+}
+
