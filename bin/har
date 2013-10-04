@@ -25,9 +25,9 @@ if(argv.file) {
             file += buf.toString()
         })
         .on('end', function() {
-            console.log(har(file).data());
+            console.log(har(file).log());
         });
 } else {
-    console.log(har(argv._[0]).data());
+    console.log(har(argv._[0]).log());
 }
 
