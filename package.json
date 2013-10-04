@@ -1,6 +1,6 @@
 {
   "name": "node-har",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Simple utility for handling and manipulating HAR files",
   "main": "index.js",
   "scripts": {
